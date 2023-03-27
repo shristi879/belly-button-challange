@@ -1,12 +1,12 @@
 Watch live here : https://shristi879.github.io/belly-button-challange/
 
 
-The init() function is executed  and then calls three other functions to display the metadata, horizontal bar chart, and bubble chart for a specific sample ID , we selected 940 and The sample ID is added to a dropdown menu.
+The init() function is executed  and then calls three other functions to display the metadata, horizontal bar chart, and bubble chart for a specific sample ID , we selected 940 and the sample ID is added to a dropdown menu.
 
-The optionChanged(value) function is called whenever the user selects a different sample ID from the dropdown menu. It sets the option variable to the new value and calls the three display functions again to update the charts and metadata for the selected sample ID.
+The value function is called whenever the user selects a different sample ID from the dropdown menu. It sets the option variable to the new value and calls the three display functions again to update the charts and metadata for the selected sample ID.
 The displayMetaData(option,dataSet) function displays the metadata for the selected sample ID by filtering the metadata array in the dataSet object using the id attribute. It then converts the metadata object to an HTML string using the displayObject() function, which formats the object's key-value pairs into a series of HTML tags.
 
-The displayHBarChart(option,dataSet) function displays a horizontal bar chart for the selected sample ID by filtering the samples array in the dataSet object using the id attribute. It then extracts the otu_ids, sample_values, and otu_labels arrays from the selected sample data and creates a trace object with these values. The trace object is then added to an array of data objects, and the Plotly.newPlot() function is called to create the chart.
+The displayHBarChart function displays a horizontal bar chart for the selected sample ID by filtering the samples array in the dataSet object using the id attribute. It then extracts the otu_ids, sample_values, and otu_labels arrays from the selected sample data and creates a trace object with these values. The trace object is then added to an array of data objects, and the Plotly.newPlot() function is called to create the chart.
 
  Creating a trace object with otu_ids and sample_values arrays for the x and y axes and using the otu_labels array for the text labels. The marker size and color are also set based on the sample_values and otu_ids arrays, respectively.
 
