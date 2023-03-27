@@ -43,7 +43,7 @@ function displayMetaData(option,dataSet) {
 }
 
 function displayObject(obj) {
-    var str = "";
+    let str = "";
     Object.entries(obj).forEach(([key,value]) => {
         str += `<br>${key}:${value}</br>`;
         if(key=="wfreq"){
