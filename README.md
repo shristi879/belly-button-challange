@@ -1,10 +1,21 @@
 
-     Belly Button diversity challange
-    
-    watch live here :  https://shristi879.github.io/belly-button-challange/
     
     
-   - The displayBarChart function displays a horizontal bar chart of the top 10 bacterial cultures found in the selected sample. The x-axis represents the sample values, and the y-axis represents the OTU IDs. The chart is sorted in descending order, with the highest sample value at the top.
+    
+    
+    Belly Button diversity challange
+    
+ 
+    
+    
+The 'init()' function initializes the webpage by selecting the dropdown menu and populating it with options based on the data. It also calls functions to display metadata, a bar chart, a bubble chart, and a gauge chart based on the first sample in the list.
 
--The displayBubbleChart function displays a bubble chart of all bacterial cultures found in the selected sample. The x-axis represents the OTU IDs, the y-axis represents the sample values, and the size of the bubbles represents the sample values. The color of the bubbles represents the OTU IDs.
--The optionChanged function is called whenever a new sample is selected from the dropdown menu. It then calls the three chart display functions to update the charts with the new sample data.
+The 'displayMetadata(sample)' function displays the metadata for the selected sample by filtering the data based on the sample ID and using Object.entries() to add each key/value pair to the HTML panel.
+
+The 'displayBarChart(sample)' function displays a horizontal bar chart of the top 10 OTUs present in the selected sample, using Plotly.js to create a trace and layout.
+
+The 'displayBubbleChart(sample)' function displays a bubble chart of the bacteria per sample in the selected sample, also using Plotly.js to create a trace and layout.
+
+The 'optionChanged(value)' function is called whenever a new option is selected from the dropdown menu, and it updates the visualizations based on the new value.
+
+Finally, the 'init()' function is called to initialize the webpage and display the initial visualizations.
